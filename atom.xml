@@ -1,26 +1,43 @@
----
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title | xml_escape }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>Rui Gao</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-06-22T09:50:38-04:00</updated>
+ <id>http://localhost:4000</id>
  <author>
-   <name>{{ site.admin_name }}</name>
-   <email>{{ site.data.global.admin_email }}</email>
+   <name>Rui Gao</name>
+   <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>PlacePulse 2.5</title>
+   <link href="http://localhost:4000/development/2019/06/14/placepulse.html"/>
+   <updated>2019-06-14T11:56:00-04:00</updated>
+   <id>http://localhost:4000/development/2019/06/14/placepulse</id>
+   <content type="html">
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>LiPaD Hansard Word Embeddings</title>
+   <link href="http://localhost:4000/development/2019/06/13/LIPAD.html"/>
+   <updated>2019-06-13T08:56:00-04:00</updated>
+   <id>http://localhost:4000/development/2019/06/13/LIPAD</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>MMANET</title>
+   <link href="http://localhost:4000/development/2019/06/12/MMANet.html"/>
+   <updated>2019-06-12T10:15:00-04:00</updated>
+   <id>http://localhost:4000/development/2019/06/12/MMANet</id>
+   <content type="html">
+</content>
+ </entry>
+ 
 
 </feed>
